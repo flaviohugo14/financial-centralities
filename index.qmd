@@ -1,0 +1,18 @@
+---
+author:
+  - name: "Flávio H. P. Silva"
+    orcid: "0000-0003-4045-101X"
+    url: "https://www.linkedin.com/in/flaviopangracio/"
+---
+
+# Apresentação {.unnumbered}
+
+::: {.callout-important appearance="simple"}
+Este livro pressupõe que o leitor tenha um conhecimento básico de R. Caso queira se familiarizar com essa linguagem de programação, recomendamos os livros a seguir:
+
+- [Ciência de Dados em R](https://livro.curso-r.com/)
+- [R for Data Science](https://r4ds.had.co.nz/) (em inglês)
+- [Geocomputation with R](https://geocompr.robinlovelace.net/) (em inglês)
+:::
+
+O presente estudo investiga a centralidade financeira urbana no municipio de São Paulo em 2010, empregando métodos de análise regional e referenciais pós-keynesianos para avaliar o setor bancário. Por meio de dados da estatística bancária (ESTBAN), do CENSO 2010 e da RAIS, construiu-se uma base de dados georreferenciada que permitiu análises espaciais exploratórias e empíricas robustas. As análises revelaram uma concentração significativa de agências e crédito no centro da cidade, além de uma profunda desiguldade na qualidade de crédito ofertada entre os distritos periféricos e centrais. Por meio dos resultados do modelo econométrico espacial, pôde-se inferir que a qualidade financeira local e dos 5 vizinhos mais próximos influencia positivamente a renda *per capita* dos distritos.

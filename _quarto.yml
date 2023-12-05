@@ -1,0 +1,37 @@
+project:
+  type: book
+
+lang: pt
+
+book:
+  title: "As centralidades financeiras no espaço urbano"
+  subtitle: "um guia prático em R"
+  date: today
+  language: pt
+  site-url: https://flaviohugo14.github.io/financial-centralities/
+  repo-url: https://github.com/flaviohugo14/financial-centralities/
+  repo-branch: main
+  sharing: [twitter, facebook, linkedin]
+  twitter-card: true
+  open-graph: true
+  publisher-place: "Viçosa - MG"
+  page-navigation: true
+  chapters:
+    - index.qmd
+    - introducao.qmd
+    - metodologia.qmd
+    - summary.qmd
+    - references.qmd
+
+theme:
+  light: cosmo
+  dark: superhero
+  
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
