@@ -16,16 +16,25 @@ book:
   open-graph: true
   publisher-place: "Viçosa - MG"
   page-navigation: true
+  
   chapters:
     - index.qmd
     - introducao.qmd
     - metodologia.qmd
     - summary.qmd
     - references.qmd
+  
 
-theme:
-  light: cosmo
-  dark: superhero
+  sidebar:
+    tools:
+      - icon: download
+        href: https://flaviohugo14.github.io/financial-centralities/As-centralidades-financeiras-no-espa%C3%A7o-urbano.pdf
+        text: Download PDF
+
+editor_options:
+  markdown:
+    wrap: 80
+    canonical: true
   
 
 bibliography: references.bib
@@ -35,3 +44,7 @@ format:
     theme: cosmo
   pdf:
     documentclass: scrreprt
+
+theme:
+  light: cosmo
+  dark: darkly
