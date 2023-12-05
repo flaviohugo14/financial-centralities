@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt" xml:lang="pt"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.321">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>As centralidades financeiras no espaço urbano - 2&nbsp; Metodologia</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./summary.html" rel="next">
+<link href="./introducao.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar"
+  }
+}</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<meta property="og:title" content="As centralidades financeiras no espaço urbano - 2&nbsp; Metodologia">
+<meta property="og:description" content="">
+<meta property="og:site-name" content="As centralidades financeiras no espaço urbano">
+<meta name="twitter:title" content="As centralidades financeiras no espaço urbano - 2&nbsp; Metodologia">
+<meta name="twitter:description" content="">
+<meta name="twitter:card" content="summary">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./metodologia.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Metodologia</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">As centralidades financeiras no espaço urbano</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/flaviohugo14/financial-centralities/" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Procurar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Apresentação</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./introducao.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introdução</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./metodologia.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Metodologia</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./summary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Referências</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Índice</h2>
+   
+  <ul>
+  <li><a href="#fonte-dos-dados" id="toc-fonte-dos-dados" class="nav-link active" data-scroll-target="#fonte-dos-dados"><span class="header-section-number">2.1</span> <em>Fonte dos dados</em></a></li>
+  <li><a href="#tratamento-dos-dados-e-construção-de-índices" id="toc-tratamento-dos-dados-e-construção-de-índices" class="nav-link" data-scroll-target="#tratamento-dos-dados-e-construção-de-índices"><span class="header-section-number">2.2</span> <em>Tratamento dos dados e construção de índices</em></a></li>
+  <li><a href="#análise-de-componentes-principais" id="toc-análise-de-componentes-principais" class="nav-link" data-scroll-target="#análise-de-componentes-principais"><span class="header-section-number">2.3</span> <em>Análise de Componentes Principais</em></a></li>
+  <li><a href="#análise-espacial" id="toc-análise-espacial" class="nav-link" data-scroll-target="#análise-espacial"><span class="header-section-number">2.4</span> <em>Análise Espacial</em></a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Metodologia</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="fonte-dos-dados" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="fonte-dos-dados"><span class="header-section-number">2.1</span> <em>Fonte dos dados</em></h2>
+<p>Para que fosse possível uma análise espacial empírica e exploratória da atividade bancária no meio urbano, foi construída uma base de dados inédita, que integra conjuntos de informações provenientes de várias fontes, a saber:</p>
+<p>ESTBAN: subsistema estatístico do Sistema COSIF que disponibiliza arquivos gerados mensalmente com a informação da Estatística Bancária Mensal, contendo a posição mensal dos saldos das principais rubricas de balancetes dos bancos comerciais e dos bancos múltiplos com carteira comercial<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
+<p>Relação de Agências - BCB: arquivos com informações sobre todas as agências do Brasil, disponibilizados pelo Banco Central do Brasil e extraídos do Sistema de Informações sobre Entidades de Interesse do Banco Central – UNICAD, mensalmente. Contém informações como endereço completo e CNPJ de cada agência<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.</p>
+<p>Google Maps API: Os endereços das agências foram submetidos à API do Google Maps, com intuito de georreferenciar a base, obtendo latitude e longitude de cada agência da Relação de Agências<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>.</p>
+<p>Malha territorial do município de São Paulo, dividida em setores censitários (e por distritos) - IBGE: Foram utilizados alguns <em>shapefiles</em> contendo informações vetoriais (polígonos) de cada setor censitário.</p>
+<p>Dados de domicílio do CENSO 2010: Foram incluídos dados demográficos e socioeconômicos, agregados por setor censitário, disponibilizados pelo CENSO 2010 para a compreensão do contexto populacional subjacente às análises efetuadas no trabalho.</p>
+<p>Para os dados da ESTBAN e da Relação de Agências - BCB, foi desenvolvido um <em>script</em> em Python para automatizar o processo de download, descompactação, leitura dos arquivos .csv ou .xls, transformação (padronização de nome e ordem de colunas), enriquecimento (dados de geolocalização do Google Maps API) e carregamento em banco de dados adequado para a análise (BigQuery). Para processar o grande volume de arquivos, foi utilizado PySpark <span class="citation" data-cites="spark">(<a href="references.html#ref-spark" role="doc-biblioref">Foundation 2023</a>)</span>.</p>
+<p>Os dados da malha territorial do município de São Paulo foram obtidos através do pacote geobr do R <span class="citation" data-cites="geobr">(<a href="references.html#ref-geobr" role="doc-biblioref">Pereira e Goncalves 2023</a>)</span>, utilizando as funções adequadas.</p>
+<p>Por fim, os dados de domicílios do CENSO 2010 foram baixados diretamente do site IBGE Downloads, na seção de “Resultados do Universo” e “Agregados por Setor Censitário” e carregados no R para serem cruzados com os demais dados.</p>
+<p>Todos os procedimentos e base de dados desta metodologia são contribuições acadêmicas reprodutíveis e, portanto, estão disponibilizadas para o público no endereço: https://github.com/flaviohugo14/quarto-abnt.</p>
+<p>A Figura <span class="quarto-unresolved-ref">?fig-brasil</span> mostra a localização das agências bancárias no Brasil, resultado do desenvolvimento da base de dados descrita acima.</p>
+</section>
+<section id="tratamento-dos-dados-e-construção-de-índices" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="tratamento-dos-dados-e-construção-de-índices"><span class="header-section-number">2.2</span> <em>Tratamento dos dados e construção de índices</em></h2>
+<p>Seguindo o referencial teórico pós-keynesiano de que vivemos em uma economia monetária de produção, o comportamento dos bancos e do público em relação à alocação de seus ativos pode ser mensurado em termos de preferência pela liquidez. Para tal mensuração, Crocco <em>et al</em>. <span class="citation" data-cites="crocco2006">(<a href="references.html#ref-crocco2006" role="doc-biblioref">2006</a>)</span> construíram dois indicadores financeiros: preferência pela liquidez do público (PLP) e preferência pela liquidez dos bancos (PLB).</p>
+<p>Segundo Crocco <em>et al</em>. <span class="citation" data-cites="crocco2006">(<a href="references.html#ref-crocco2006" role="doc-biblioref">2006</a>)</span>, no balanço dos bancos, a conta de operações de crédito representa a porção de ativos com baixa liquidez relacionada aos empréstimos concedidos. Por outro lado, as contas de depósitos à vista, poupança e depósitos a prazo são registradas no passivo do balanço dos bancos e refletem o comportamento geral do público, agindo como intermediários financeiros. Segundo o enfoque pós-keynesiano, o público realiza suas decisões de alocação de ativos entre as contas mencionadas acima levando em consideração o nível de incerteza e a quantidade de informações disponíveis nas regiões. A decisão de alocação de portfólio envolve a escolha entre manter ativos mais líquidos, com retorno financeiro menor, em situações de maior incerteza econômica, ou optar por ativos menos líquidos, porém com potencial de maior rendimento financeiro, quando o cenário econômico se mostra mais confiável.</p>
+<p>Baseado no índice criado pelos autores, pode-se definir o índice de preferência pela liquidez do público (PLP) utilizado neste trabalho:</p>
+<span class="math display">\[\begin{equation}
+PLP = \frac{DV}{DT}
+\end{equation}\]</span>
+<p><span class="math inline">\(DV =\)</span> depósitos à vista<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>.</p>
+<p><span class="math inline">\(DT =\)</span> depósitos totais (incluem depósitos a vista, depósitos de poupança<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> e depósitos interfinanceiros<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>).</p>
+<p>Quanto maior esse índice, maior é a preferência pela liquidez do público, pois aloca maior parcela de seus recursos em aplicações de maior liquidez.</p>
+<p>Para o índice de preferência de liquidez dos bancos (PLB), Crocco <em>et al</em>. <span class="citation" data-cites="crocco2006">(<a href="references.html#ref-crocco2006" role="doc-biblioref">2006</a>)</span> diz que o sistema bancário aloca seus recursos entre ativos de maior ou menor liquidez levando em conta o grau de desenvolvimento da região em que se encontra. Dessa forma, utilizaram a conta de operações de crédito para captar a disposição do banco a emprestar, e a conta de depósitos à vista, que representa a intenção do público bancarizado em manter seus ativos mais líquidos possíveis. O objetivo é medir como os bancos gerenciam seus balancetes e sua preferência pela liquidez, tornando seus ativos mais ou menos líquidos de acordo com as características econômicas da região a que pertencem. Neste trabalho, o PLB foi definido como:</p>
+<span class="math display">\[\begin{equation}
+PLB = \frac{DV}{OPC}
+\end{equation}\]</span>
+<p><span class="math inline">\(DV =\)</span> depósitos à vista.</p>
+<p><span class="math inline">\(OPC =\)</span> operações de crédito<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a>.</p>
+<p>Quanto maior o índice, maior a preferência pela liquidez dos bancos, pois estão emprestando menos (ficando com ativos mais líquidos).</p>
+<p>É esperado que PLP e PLB sejam mais baixos em regiões mais desenvolvidas, pois o público apresentaria menor preferência pela liquidez o que é sinônimo de prosperidade econômica segundo o arcabouço teórico pós-keynesiano. Da mesma forma, os bancos também terão menor preferência por liquidez e maior disposição a emprestar, dado o desempenho econômico dessas regiões.</p>
+<p>Cabe nessa análise, a introdução de um índice inédito na literatura, que complemente o PLB de Crocco <em>et al</em>. <span class="citation" data-cites="crocco2006">(<a href="references.html#ref-crocco2006" role="doc-biblioref">2006</a>)</span> e torne a preferência pela liquidez dos bancos dependente apenas de variáveis endógenas, ou seja, que considere apenas a escolha dos bancos entre seus ativos e desconsidere os depósitos à vista (variável exógena para os bancos). Isso é importante para que o índice não seja comprometido pelo volume de depósitos do público bancarizado, que tende a ser mais alto em regiões mais desenvolvidas, fazendo com que o PLB de Crocco <em>et al</em>. <span class="citation" data-cites="crocco2006">(<a href="references.html#ref-crocco2006" role="doc-biblioref">2006</a>)</span> fique alto nessas regiões. Dessa forma, pode-se definir um índice de preferência pela liquidez dos bancos endógeno (PLBe), como a proporção de ativos líquidos sobre ativos totais:</p>
+<span class="math display">\[\begin{equation}
+PLBen = \frac{D + E}{A}
+\end{equation}\]</span>
+<p><span class="math inline">\(D + E =\)</span> Disponibilidades<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> + Empréstimos e Títulos Descontados<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a>.</p>
+<p><span class="math inline">\(A =\)</span> Total do ativo<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a>.</p>
+<p>Com interpretação semelhante ao PLB, espera-se que o PLBe seja menor em regiões mais desenvolvidas.</p>
+<p>Para mensurar a concentração, as centralidades financeiras e a desigualdade na oferta de crédito, calculou-se também alguns índices inspirados no “quociente locacional”, como fez Tupy <span class="citation" data-cites="igor">(<a href="references.html#ref-igor" role="doc-biblioref">2018</a>)</span>, comparando a participação no crédito nacional de uma microrregião com sua participação relativa no PIB nacional. Esse índice foi chamado de Índice Regional de Crédito (IRC), definido como:</p>
+<span class="math display">\[\begin{equation}
+IRC_{i} = \frac{\frac{cred_i}{\sum_{i=1}^n cred_i}}{\frac{pib_i}{\sum_{i=1}^n pib_i}}
+\end{equation}\]</span>
+<p>Aqui, utilizou-se a renda dos setores censitários no lugar do PIB, para identificar os padrões de concentração de dispersão do crédito no meio urbano. Além disso, diferentes tipos de contas de crédito foram incorporados para criar outros índices baseados no IRC, com a finalidade de comparar qualitativamente os padrões de concentração e dispersão de cada tipo de crédito (a referência da conta da ESTBAN foi mencionada entre parênteses). São eles:</p>
+<ul>
+<li>O próprio Índice Regional de Crédito (IRC):</li>
+</ul>
+<span class="math display">\[\begin{equation}
+IRC_{i} = \frac{\frac{OPC_i}{\sum_{i=1}^n OPC_i}}{\frac{renda_i}{\sum_{i=1}^n renda_i}}
+\end{equation}\]</span>
+<p><span class="math inline">\(OPC_i =\)</span> Operações de crédito (160) ofertadas no distrito <span class="math inline">\(i\)</span>.</p>
+<p><span class="math inline">\(renda_i =\)</span> Renda nominal do distrito <span class="math inline">\(i\)</span>.</p>
+<ul>
+<li>Índice Regional de Empréstimos (IRE):</li>
+</ul>
+<span class="math display">\[\begin{equation}
+IRE_{i} = \frac{\frac{E_i}{\sum_{i=1}^n E_i}}{\frac{renda_i}{\sum_{i=1}^n renda_i}}
+\end{equation}\]</span>
+<p><span class="math inline">\(E_i =\)</span> Empréstimos ofertados (161) no distrito <span class="math inline">\(i\)</span>.</p>
+<p><span class="math inline">\(renda_i =\)</span> Renda nominal do distrito <span class="math inline">\(i\)</span>.</p>
+<ul>
+<li>Índice Regional de Financiamentos (IRF):</li>
+</ul>
+<span class="math display">\[\begin{equation}
+IRF_{i} = \frac{\frac{F_i}{\sum_{i=1}^n F_i}}{\frac{renda_i}{\sum_{i=1}^n renda_i}}
+\end{equation}\]</span>
+<p><span class="math inline">\(F_i =\)</span> Financiamentos ofertados (162) no distrito <span class="math inline">\(i\)</span>.</p>
+<p><span class="math inline">\(renda_i =\)</span> Renda nominal do distrito <span class="math inline">\(i\)</span>.</p>
+<ul>
+<li>Índice Regional de Lucro bancário (IRL):</li>
+</ul>
+<span class="math display">\[\begin{equation}
+IRL_{i} = \frac{\frac{L_i}{\sum_{i=1}^n L_i}}{\frac{renda_i}{\sum_{i=1}^n renda_i}}
+\end{equation}\]</span>
+<p><span class="math inline">\(L_i =\)</span> Total das contas de resultado (710) no distrito <span class="math inline">\(i\)</span>.</p>
+<p><span class="math inline">\(renda_i =\)</span> Renda nominal do distrito <span class="math inline">\(i\)</span>.</p>
+<ul>
+<li>Índice Regional de Depósitos:</li>
+</ul>
+<span class="math display">\[\begin{equation}
+IRD_{i} = \frac{\frac{DV_i}{\sum_{i=1}^n DV_i}}{\frac{renda_i}{\sum_{i=1}^n renda_i}}
+\end{equation}\]</span>
+<p><span class="math inline">\(DV_i =\)</span> Depósitos à vista no distrito <span class="math inline">\(i\)</span>.</p>
+<p><span class="math inline">\(renda_i =\)</span> Renda nominal do distrito <span class="math inline">\(i\)</span>.</p>
+<ul>
+<li>Índice Regional de Risco (IRR):</li>
+</ul>
+<span class="math display">\[\begin{equation}
+IRR_{i} = \frac{\frac{PC_i}{\sum_{i=1}^n PC_i}}{\frac{renda_i}{\sum_{i=1}^n renda_i}}
+\end{equation}\]</span>
+<p><span class="math inline">\(PC_i =\)</span> Provisão de crédito (174) no distrito <span class="math inline">\(i\)</span>.</p>
+<p><span class="math inline">\(renda_i =\)</span> Renda nominal do distrito <span class="math inline">\(i\)</span>.</p>
+<p>Se os índices definidos acima são iguais a 1, a participação distrito <span class="math inline">\(i\)</span> no total da conta analisada é idêntica à sua participação na renda global. Se os índices recebem valores menores que 1, indica que o distrito <span class="math inline">\(i\)</span> participa menos do que o proporcional à sua participação na renda do que a conta analisada. Para o IRC, IRE, IRF, significaria menos crédito, empréstimo e financiamento, comparado a participação na renda global. Para valores maiores que 1, significaria que a região recebe mais crédito do que participa da renda global <span class="citation" data-cites="igor">(<a href="references.html#ref-igor" role="doc-biblioref">Tupy 2018</a>)</span>. A análise é semelhante para IRD, IRR e IRL, mas aqui, a preocupação é com a distribuição dos depósitos em relação a distribuição da renda (IRD), com a percepção de risco que os bancos têm com cada região (IRR), e a distribuição dos lucros bancários em termos de resultado, comparada à distribuição da renda entre os setores censitários.</p>
+<p>Além desses índices de concentração e centralidade, foi calculado um índice de concentração de operações de crédito e um índice de concentração do setor bancário, ambos baseados no Índice de Hirschman-Herfindahl (IHH):</p>
+<p>Índice de concentração de operações (ICO): Consiste na soma de quadrados da participação relativa de todas as <span class="math inline">\(N\)</span> operações possíveis ofertadas no distrito: Empréstimos e Descontos de Títulos (161), Financiamentos (162), Financiamentos rurais à agricultura – custeio/investimento (163), Financiamentos rurais à pecuária - custeio/investimento (164), Financiamentos rurais à agricultura – comercialização (165), Financiamentos rurais à pecuária – comercialização (166), Financiamentos agroindustriais (167_168), Financiamentos Imobiliários (169), Outras Operações de crédito (172), Outros créditos (173) e Arrendamento Mercantil (180). Pode ser calculado como:</p>
+<span class="math display">\[\begin{equation} \label{eq:ico}
+ICO_{j} = \sum_{i=1}^N \Bigl(\frac{OP_{ij}}{OPC_{j}}\Bigr)^2
+\end{equation}\]</span>
+<p><span class="math inline">\(OP_{ij} =\)</span> Operação de crédito <span class="math inline">\(i\)</span> na região <span class="math inline">\(j\)</span> (Dentre as citadas acima).</p>
+<p><span class="math inline">\(OPC_{j} =\)</span> Total das operações de crédito na região <span class="math inline">\(j\)</span></p>
+<p><span class="math inline">\(N =\)</span> Número de operações totais.</p>
+<p>Índice de concentração do setor bancário (ICB): Consiste na soma de quadrados da participação relativa de todos os <span class="math inline">\(N\)</span> bancos (conglomerados) do setor bancário que operam no distrito, pode ser calculado como:</p>
+<span class="math display">\[\begin{equation}
+ICB_{j} = \sum_{i=1}^N \Bigl(\frac{x_{ij}}{x_{j}}\Bigr)^2
+\end{equation}\]</span>
+<p><span class="math inline">\(x_{ij} =\)</span> Operação de crédito do banco (conglomerado) <span class="math inline">\(i\)</span> na região <span class="math inline">\(j\)</span> (Dentre as citadas acima).</p>
+<p><span class="math inline">\(x_{j} =\)</span> Total das operações de crédito na região <span class="math inline">\(j\)</span>.</p>
+<p><span class="math inline">\(N =\)</span> Número de conglomerados.</p>
+<p>Quando todos os <span class="math inline">\(N\)</span> bancos possuem a mesma participação de mercado, o índice de concentração do setor bancário atinge o seu valor mínimo, que é <span class="math inline">\(ICB = \frac{1}{N}\)</span>. Por outro lado, no caso oposto, em que uma única instituição atua como um monopolista e detém todo o mercado de serviços bancários, o índice de concentração atinge o seu valor máximo, que é igual a <span class="math inline">\(1\)</span> <span class="citation" data-cites="igor paula">(<a href="references.html#ref-igor" role="doc-biblioref">Tupy 2018</a>; <a href="references.html#ref-paula" role="doc-biblioref">Paula, Oreiro, e Basilio 2013</a>)</span>. O mesmo vale para operações de crédito, quando elas são bem diversificadas e apresentam a mesma distribuição, tem-se que <span class="math inline">\(ICO = \frac{1}{N}\)</span>, enquanto uma baixa diversificação aproxima cada vez mais o índice à <span class="math inline">\(ICO = 1\)</span>. Esses índices serão utilizados para mensurar a qualidade e a diversidade do mercado de crédito nas regiões.</p>
+</section>
+<section id="análise-de-componentes-principais" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="análise-de-componentes-principais"><span class="header-section-number">2.3</span> <em>Análise de Componentes Principais</em></h2>
+<p>Após a criação das variáveis e dos índices, será utilizada uma técnica estatística de análise multivariada: a análise de componentes principais (ACP).</p>
+<p>A técnica de ACP tem como objetivo construir um conjunto de variáveis estatisticamente independentes, formadas a partir de uma transformação linear do conjunto de variáveis e reduzir a dimensão da base de dados perdendo o mínimo de informação (variância) possível <span class="citation" data-cites="mingotti">(<a href="references.html#ref-mingotti" role="doc-biblioref">Mingoti 2005</a>)</span>.</p>
+<p>Segundo Andrade <span class="citation" data-cites="andrade">(<a href="references.html#ref-andrade" role="doc-biblioref">1989</a>)</span>, com <span class="math inline">\(n\)</span> variáveis, pode-se gerar até <span class="math inline">\(n\)</span> componentes. No entanto, quando há alta correlação entre as variáveis, o número de componentes necessários à explicação da maior parte da variância dos dados resume-se em a poucos componentes. Dessa forma, podemos até utilizar de técnicas de análise univariada, caso seja possível condensar as <span class="math inline">\(n\)</span> variáveis em poucos componentes.</p>
+<p>Pretende-se criar, portanto, alguns índices de centralidade e qualidade financeira, que resumam o grande número de variáveis da base de dados original, juntamente com os índices criados na seção 3.2. Esses índices serão utilizados no modelo de Econometria de Espacial, definido na seção 3.4.</p>
+</section>
+<section id="análise-espacial" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="análise-espacial"><span class="header-section-number">2.4</span> <em>Análise Espacial</em></h2>
+<p>Todo o processo que se dá no espaço está sujeito à chamada Lei de Tobler, conhecida como a Primeira Lei da Geografia, que diz que “tudo depende de todo o restante, porém o que está mais próximo depende mais do que aquilo que está mais distante” <span class="citation" data-cites="almeida">(<a href="references.html#ref-almeida" role="doc-biblioref">Almeida 2012</a>)</span>. Logo, a proximidade influencia a interação dos agentes no espaço, de forma a tornar a distribuição dos eventos espaciais não-aleatórios. A análise espacial, portanto, consiste em revelar e interpretar essas relações de proximidade e influência entre regiões vizinhas.</p>
+<p>A Econometria Espacial, por sua vez, é um ramo da econometria convencional, tendo como escopo, estimar, testar e prever modelos teóricos, influenciados pelos efeitos espaciais <span class="citation" data-cites="almeida">(<a href="references.html#ref-almeida" role="doc-biblioref">Almeida 2012</a>)</span>. O Modelo Clássico de Regressão Linear (MCRL) tem a limitação de não ser capaz de controlar esses efeitos espaciais e, portanto, deve ser relaxado para incorporar tais efeitos.</p>
+<p>Segundo Almeida <span class="citation" data-cites="almeida">(<a href="references.html#ref-almeida" role="doc-biblioref">2012</a>)</span>, os processos espaciais de dependência espacial, ou seja, aqueles em que uma variável aleatória <span class="math inline">\(y_i\)</span> da região <span class="math inline">\(i\)</span> é influenciada pela variável <span class="math inline">\(y_j\)</span> da região vizinha <span class="math inline">\(j\)</span>, são classificados como Processos Autorregressivos Espaciais (SAR). Para análise desse tipo de processo, é realizada uma defasagem espacial sobre uma variável <span class="math inline">\(y\)</span> aleatória da média da vizinhança ponderada por uma matriz de pesos espaciais <span class="math inline">\(W\)</span>. O modelo SAR, em sua versão pura, é expresso como a seguir:</p>
+<span class="math display">\[\begin{equation}
+y = \rho Wy + \varepsilon
+\end{equation}\]</span>
+<p>Em que <span class="math inline">\(Wy\)</span> é um vetor <span class="math inline">\(n\)</span> por 1 de defasagens espaciais para a variável dependente, <span class="math inline">\(\rho\)</span> é o coeficiente autorregressivo espacial e <span class="math inline">\(\varepsilon\)</span> é o vetor de termos de erro.</p>
+<p>A versão mista do modelo SAR, incorpora também uma matriz <span class="math inline">\(X\)</span> de variáveis exógenas:</p>
+<span class="math display">\[\begin{equation}
+y = \rho Wy + X \beta + \varepsilon
+\end{equation}\]</span>
+<p>Já os processos espaciais em que há influência de algo que não é capaz de ser modelado, podem ser incorporados na estrutura dos erros do modelo. Esses processos podem ser analisados pelo Modelo de Erro Autorregressivo Espacial (SEM), expresso por:</p>
+<span class="math display">\[\begin{equation}
+y = X \beta + \xi
+\end{equation}\]</span>
+<span class="math display">\[\begin{equation}
+\xi = \lambda W \xi + \varepsilon
+\end{equation}\]</span>
+<p>Rearranjando:</p>
+<span class="math display">\[\begin{equation}
+y = X \beta + (I_n - \lambda W)^{-1}\varepsilon
+\end{equation}\]</span>
+<p>Para analisar os transbordamentos espaciais dos processos financeiros e seu impacto na economia real, pode-se utilizar o Modelo Regressivo Cruzado Espacial (SLX), que considera os transbordamentos espaciais localizados das variáveis explicativas sobre a variável dependente:</p>
+<span class="math display">\[\begin{equation}
+y = X\beta + WX \tau + \varepsilon
+\end{equation}\]</span>
+<p>Para os efeitos globais, pode-se utilizar o modelo de Durbin espacial ou modelo SDM, que incorpora também a difusão espacial da variável dependente:</p>
+<span class="math display">\[\begin{equation}
+y = \rho Wy + X\beta + WX \tau + \varepsilon
+\end{equation}\]</span>
+<p>Como a demanda por crédito é global e sua oferta é local, é esperado que haja vazamentos de crédito de uma região para outra, portanto, os modelos SLX e SDM parecem mais adequados para analisar o impacto em variáveis reais, como a Renda per capita.</p>
+<p>A matriz de pesos espaciais <span class="math inline">\(W\)</span> escolhida será a que maximiza o coeficiente de correlação espacial I de Moran:</p>
+<span class="math display">\[\begin{equation}
+I = \frac{n}{\sum_i\sum_j w_{ij}}\frac{\sum_{i}\sum_{j} w_{ij}z_i z_j}{\sum_{i=1}^n z_{i}^2}
+\end{equation}\]</span>
+<p>Em que <span class="math inline">\(n\)</span> é o número de regiões, <span class="math inline">\(z\)</span> denota os valores da variável de interesse padronizada e <span class="math inline">\(w_{ij}\)</span> os pesos espaciais, que descrevem as interações entre as regiões <span class="math inline">\(i\)</span> e <span class="math inline">\(j\)</span> <span class="citation" data-cites="almeida">(<a href="references.html#ref-almeida" role="doc-biblioref">Almeida 2012</a>)</span>.</p>
+<p>Por fim, a expectativa é de que seja possível constatar correlação espacial nos processos financeiros e aglomeração da atividade bancária nas regiões centrais.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(bigrquery)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(geobr)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sf)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stringr)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggspatial)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(extrafont)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(cowplot)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stargazer)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(psych)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(huxtable)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(magrittr)</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(spatialreg)</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(basedosdados)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Download ESTBAN data from BigQuery</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>project_id <span class="ot">&lt;-</span> <span class="st">"cloud-learning-doing"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>sql <span class="ot">&lt;-</span> <span class="st">"SELECT * FROM estban.estban_agencias_geolocalizadas WHERE data_base = '2010-12-01'"</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>query <span class="ot">&lt;-</span> bigrquery<span class="sc">::</span><span class="fu">bq_project_query</span>(</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  project_id,</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  sql,</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>agencias_2010 <span class="ot">&lt;-</span> bigrquery<span class="sc">::</span><span class="fu">bq_table_download</span>(query)</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Download RAIS estabelecimentos</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>basedosdados<span class="sc">::</span><span class="fu">set_billing_id</span>(project_id)</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>query <span class="ot">&lt;-</span> basedosdados<span class="sc">::</span><span class="fu">read_sql</span>(<span class="st">"SELECT distritos_sp, SUM(quantidade_vinculos_ativos) as qtd_va, COUNT(*) as qtd_empresas FROM basedosdados.br_me_rais.microdados_estabelecimentos WHERE ano = 2010 AND id_municipio = '3550308' GROUP BY distritos_sp"</span>)</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>rais <span class="ot">&lt;-</span> query <span class="sc">|&gt;</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">code_district =</span> <span class="fu">paste0</span>(<span class="st">'3550308'</span>, <span class="fu">substr</span>(distritos_sp, <span class="dv">3</span>, <span class="dv">4</span>))) <span class="sc">|&gt;</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>    <span class="fu">c</span>(</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>      <span class="st">"code_district"</span>,</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>      <span class="st">"qtd_va"</span>,</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>      <span class="st">"qtd_empresas"</span></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Download and write shapefiles</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Setores censitários do estado de São Paulo</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>sp_ct <span class="ot">&lt;-</span> geobr<span class="sc">::</span><span class="fu">read_census_tract</span>(<span class="dv">35</span>, <span class="at">showProgress =</span> <span class="cn">FALSE</span>, <span class="at">simplified =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Distritos geograficamente definidos de todo Brasil</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>br_bairros <span class="ot">&lt;-</span> geobr<span class="sc">::</span><span class="fu">read_neighborhood</span>(<span class="dv">2010</span>, <span class="at">showProgress =</span> <span class="cn">FALSE</span>, <span class="at">simplified =</span> <span class="cn">FALSE</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Distritos da cidade de São Paulo</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>sp_bairros <span class="ot">&lt;-</span> br_bairros <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">filter</span>(code_muni <span class="sc">==</span> <span class="st">"3550308"</span>)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Setores censitários da cidade de São Paulo</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>sp_ct_capital <span class="ot">&lt;-</span> sp_ct <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">filter</span>(code_muni <span class="sc">==</span> <span class="st">"3550308"</span>)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Polígono do município de São Paulo</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>sp_capital <span class="ot">&lt;-</span> geobr<span class="sc">::</span><span class="fu">read_municipality</span>(<span class="at">code_muni =</span> <span class="dv">3550308</span>, <span class="at">showProgress =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="co"># library(h3)</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="co"># hex &lt;- h3::geo_to_h3(centroids, res = 7)</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="co"># hex_map &lt;- h3::h3_to_geo_boundary_sf(hex) |&gt; st_transform(4674)</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="co"># sp_ct_capital$area &lt;- sp_ct_capital |&gt; st_area() |&gt; as.numeric()</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a><span class="co"># st_intersection(hex_map[1,1], sp_ct_capital) |&gt;</span></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a><span class="co">#   mutate(intersect_area = sf::st_area(.),</span></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a><span class="co">#          pct_intersect = intersect_area / area)</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Dados do CENSO 2010 agregados por setor censitário</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>renda_sp_capital <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"data/DomicilioRenda_SP1.csv"</span>, <span class="at">sep =</span> <span class="st">";"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">code_tract =</span> <span class="fu">as.character</span>(Cod_setor)) <span class="sc">|&gt;</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(V002 <span class="sc">!=</span> <span class="st">"X"</span>)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>populacao_sp_capital <span class="ot">&lt;-</span> readxl<span class="sc">::</span><span class="fu">read_xls</span>(<span class="st">"data/Basico_SP1.xls"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">code_tract =</span> <span class="fu">as.character</span>(Cod_setor)) <span class="sc">|&gt;</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(<span class="fu">c</span>(<span class="st">"code_tract"</span>, <span class="st">"V002"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(V002 <span class="sc">!=</span> <span class="st">"X"</span>)</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>domicilios_sp_capital <span class="ot">&lt;-</span> readxl<span class="sc">::</span><span class="fu">read_excel</span>(<span class="st">"data/Domicilio01_SP1.xls"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">code_tract =</span> <span class="fu">as.character</span>(Cod_setor)) <span class="sc">|&gt;</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">c</span>(</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>      <span class="st">"code_tract"</span>,</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>      <span class="st">"V001"</span>,</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>      <span class="st">"V002"</span>,</span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>      <span class="st">"V003"</span>,</span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>      <span class="st">"V004"</span>,</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>      <span class="st">"V005"</span>,</span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>      <span class="st">"V006"</span>,</span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>      <span class="st">"V007"</span>,</span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>      <span class="st">"V008"</span>,</span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>      <span class="st">"V009"</span>,</span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>      <span class="st">"V010"</span>,</span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a>      <span class="st">"V011"</span>,</span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a>      <span class="st">"V012"</span>,</span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a>      <span class="st">"V017"</span>,</span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a>      <span class="st">"V024"</span>,</span>
+<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a>      <span class="st">"V043"</span></span>
+<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a>pessoa_sp_capital <span class="ot">&lt;-</span> readxl<span class="sc">::</span><span class="fu">read_excel</span>(<span class="st">"data/Pessoa01_SP1.xls"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">code_tract =</span> <span class="fu">as.character</span>(Cod_setor)) <span class="sc">|&gt;</span></span>
+<span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(</span>
+<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a>    <span class="fu">c</span>(</span>
+<span id="cb5-39"><a href="#cb5-39" aria-hidden="true" tabindex="-1"></a>      <span class="st">"code_tract"</span>,</span>
+<span id="cb5-40"><a href="#cb5-40" aria-hidden="true" tabindex="-1"></a>      <span class="st">"V001"</span></span>
+<span id="cb5-41"><a href="#cb5-41" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb5-42"><a href="#cb5-42" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb5-43"><a href="#cb5-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-44"><a href="#cb5-44" aria-hidden="true" tabindex="-1"></a>domicilios_sp_capital<span class="sc">$</span>domicilios <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(domicilios_sp_capital<span class="sc">$</span>V002)</span>
+<span id="cb5-45"><a href="#cb5-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-46"><a href="#cb5-46" aria-hidden="true" tabindex="-1"></a>domicilios_sp_capital<span class="sc">$</span>agua_encanada <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(domicilios_sp_capital<span class="sc">$</span>V012)</span>
+<span id="cb5-47"><a href="#cb5-47" aria-hidden="true" tabindex="-1"></a>domicilios_sp_capital<span class="sc">$</span>esgoto <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(domicilios_sp_capital<span class="sc">$</span>V017)</span>
+<span id="cb5-48"><a href="#cb5-48" aria-hidden="true" tabindex="-1"></a>domicilios_sp_capital<span class="sc">$</span>domicilios_com_banheiro <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(domicilios_sp_capital<span class="sc">$</span>V024)</span>
+<span id="cb5-49"><a href="#cb5-49" aria-hidden="true" tabindex="-1"></a>domicilios_sp_capital<span class="sc">$</span>energia_eletrica <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(domicilios_sp_capital<span class="sc">$</span>V043)</span>
+<span id="cb5-50"><a href="#cb5-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-51"><a href="#cb5-51" aria-hidden="true" tabindex="-1"></a>renda_sp_capital<span class="sc">$</span>renda_nominal <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(renda_sp_capital<span class="sc">$</span>V002) <span class="sc">+</span></span>
+<span id="cb5-52"><a href="#cb5-52" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as.numeric</span>(renda_sp_capital<span class="sc">$</span>V003) <span class="sc">+</span></span>
+<span id="cb5-53"><a href="#cb5-53" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as.numeric</span>(renda_sp_capital<span class="sc">$</span>V004)</span>
+<span id="cb5-54"><a href="#cb5-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-55"><a href="#cb5-55" aria-hidden="true" tabindex="-1"></a>pessoa_sp_capital<span class="sc">$</span>alfabetizados <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(pessoa_sp_capital<span class="sc">$</span>V001)</span>
+<span id="cb5-56"><a href="#cb5-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-57"><a href="#cb5-57" aria-hidden="true" tabindex="-1"></a>populacao_sp_capital<span class="sc">$</span>populacao <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(populacao_sp_capital<span class="sc">$</span>V002)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Adicionando dados de renda e população do CENSO 2010 aos shapefiles por setor censitário</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>sp_ct_capital_joined <span class="ot">&lt;-</span> sp_ct_capital <span class="sc">|&gt;</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">left_join</span>(</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    renda_sp_capital,</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">by =</span> <span class="st">"code_tract"</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">left_join</span>(</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    populacao_sp_capital,</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">by =</span> <span class="st">"code_tract"</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">left_join</span>(</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>    domicilios_sp_capital,</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">by =</span> <span class="st">"code_tract"</span></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">left_join</span>(</span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>    pessoa_sp_capital,</span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">by =</span> <span class="st">"code_tract"</span></span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Agrupando por bairro</span></span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>sp_capital_bairros <span class="ot">&lt;-</span> sp_ct_capital_joined <span class="sc">|&gt;</span></span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>  sf<span class="sc">::</span><span class="fu">st_drop_geometry</span>() <span class="sc">|&gt;</span></span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">group_by</span>(code_district) <span class="sc">|&gt;</span></span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">summarise</span>(</span>
+<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a>    <span class="at">renda_nominal =</span> <span class="fu">sum</span>(renda_nominal, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a>    <span class="at">populacao =</span> <span class="fu">sum</span>(<span class="fu">ifelse</span>(<span class="fu">is.na</span>(populacao), <span class="dv">0</span>, populacao), <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a>    <span class="at">domicilios =</span> <span class="fu">sum</span>(domicilios, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a>    <span class="at">agua_encanada =</span> <span class="fu">sum</span>(agua_encanada, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a>    <span class="at">esgoto =</span> <span class="fu">sum</span>(esgoto, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb6-32"><a href="#cb6-32" aria-hidden="true" tabindex="-1"></a>    <span class="at">banheiro =</span> <span class="fu">sum</span>(domicilios_com_banheiro, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb6-33"><a href="#cb6-33" aria-hidden="true" tabindex="-1"></a>    <span class="at">energia_eletrica =</span> <span class="fu">sum</span>(energia_eletrica, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb6-34"><a href="#cb6-34" aria-hidden="true" tabindex="-1"></a>    <span class="at">alfabetizados =</span> <span class="fu">sum</span>(alfabetizados, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb6-35"><a href="#cb6-35" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb6-36"><a href="#cb6-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-37"><a href="#cb6-37" aria-hidden="true" tabindex="-1"></a><span class="co"># Juntando com shapefile por bairro</span></span>
+<span id="cb6-38"><a href="#cb6-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-39"><a href="#cb6-39" aria-hidden="true" tabindex="-1"></a>shape_censo_bairros <span class="ot">&lt;-</span> sp_bairros <span class="sc">|&gt;</span></span>
+<span id="cb6-40"><a href="#cb6-40" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">left_join</span>(sp_capital_bairros, <span class="at">by =</span> <span class="st">"code_district"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb6-41"><a href="#cb6-41" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">left_join</span>(rais, <span class="at">by =</span> <span class="st">"code_district"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb6-42"><a href="#cb6-42" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">qtd_empresas =</span> <span class="fu">as.integer</span>(qtd_empresas)) <span class="sc">|&gt;</span></span>
+<span id="cb6-43"><a href="#cb6-43" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">qtd_va =</span> <span class="fu">as.integer</span>(qtd_va))</span>
+<span id="cb6-44"><a href="#cb6-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-45"><a href="#cb6-45" aria-hidden="true" tabindex="-1"></a>shape_censo_bairros<span class="sc">$</span>area <span class="ot">&lt;-</span> sf<span class="sc">::</span><span class="fu">st_area</span>(shape_censo_bairros)</span>
+<span id="cb6-46"><a href="#cb6-46" aria-hidden="true" tabindex="-1"></a>shape_censo_bairros<span class="sc">$</span>densidade_demografica <span class="ot">&lt;-</span> shape_censo_bairros<span class="sc">$</span>populacao<span class="sc">/</span>shape_censo_bairros<span class="sc">$</span>area</span>
+<span id="cb6-47"><a href="#cb6-47" aria-hidden="true" tabindex="-1"></a>shape_censo_bairros<span class="sc">$</span>densidade_empresarial <span class="ot">&lt;-</span> shape_censo_bairros<span class="sc">$</span>qtd_empresas<span class="sc">/</span>shape_censo_bairros<span class="sc">$</span>area</span>
+<span id="cb6-48"><a href="#cb6-48" aria-hidden="true" tabindex="-1"></a>shape_censo_bairros<span class="sc">$</span>densidade_vinculos <span class="ot">&lt;-</span> shape_censo_bairros<span class="sc">$</span>qtd_va<span class="sc">/</span>shape_censo_bairros<span class="sc">$</span>area</span>
+<span id="cb6-49"><a href="#cb6-49" aria-hidden="true" tabindex="-1"></a>shape_censo_bairros<span class="sc">$</span>pct_oferta_de_emprego <span class="ot">&lt;-</span> shape_censo_bairros<span class="sc">$</span>qtd_va<span class="sc">/</span>shape_censo_bairros<span class="sc">$</span>populacao</span>
+<span id="cb6-50"><a href="#cb6-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-51"><a href="#cb6-51" aria-hidden="true" tabindex="-1"></a><span class="co"># Juntando com os dados das agências bancárias de São Paulo (junção geográfica)</span></span>
+<span id="cb6-52"><a href="#cb6-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-53"><a href="#cb6-53" aria-hidden="true" tabindex="-1"></a>shape_censo_agencias_bairros <span class="ot">&lt;-</span> sf<span class="sc">::</span><span class="fu">st_join</span>(shape_censo_bairros, agencias_2010_sp)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Agregando as contas por bairro e removendo bairros sem população (rurais).</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Dataframe próprio para análise.</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>shape_final <span class="ot">&lt;-</span> shape_censo_agencias_bairros <span class="sc">|&gt;</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">group_by</span>(code_district) <span class="sc">|&gt;</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">summarise</span>(</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">disponibilidades =</span> <span class="fu">sum</span>(<span class="st">`</span><span class="at">110</span><span class="st">`</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">op_cred =</span> <span class="fu">sum</span>(<span class="st">`</span><span class="at">160</span><span class="st">`</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">emprestimos =</span> <span class="fu">sum</span>(<span class="st">`</span><span class="at">161</span><span class="st">`</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">fin =</span> <span class="fu">sum</span>(<span class="st">`</span><span class="at">162</span><span class="st">`</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">fin_agricultura_inv =</span> <span class="fu">sum</span>(<span class="st">`</span><span class="at">163</span><span class="st">`</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">fin_pecuaria_inv =</span> <span class="fu">sum</span>(<span class="st">`</span><span class="at">164</span><span class="st">`</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">fin_agricultura_com =</span> <span class="fu">sum</span>(<span class="st">`</span><span class="at">165</span><span class="st">`</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">fin_pecuaria_com =</span> <span class="fu">sum</span>(<span class="st">`</span><span class="at">166</span><span class="st">`</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">fin_agroindustrial =</span> <span class="fu">sum</span>(<span class="st">`</span><span class="at">167_168</span><span class="st">`</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">fin_imobiliarios =</span> <span class="fu">sum</span>(<span class="st">`</span><span class="at">169</span><span class="st">`</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">outras_op_cred =</span> <span class="fu">sum</span>(<span class="st">`</span><span class="at">172</span><span class="st">`</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">outros_cred =</span> <span class="fu">sum</span>(<span class="st">`</span><span class="at">173</span><span class="st">`</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>    <span class="at">arr_mercantial =</span> <span class="fu">sum</span>(<span class="st">`</span><span class="at">180</span><span class="st">`</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>    <span class="at">provisao_arr_mercantil =</span> <span class="fu">sum</span>(<span class="st">`</span><span class="at">184</span><span class="st">`</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">provisao_de_credito =</span> <span class="fu">sum</span>(<span class="st">`</span><span class="at">174</span><span class="st">`</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">ativos =</span> <span class="fu">sum</span>(<span class="st">`</span><span class="at">399</span><span class="st">`</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">depositos =</span> <span class="fu">sum</span>(<span class="st">`</span><span class="at">401_402_404_411_412_413_414_415_416_417_418_419</span><span class="st">`</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>    <span class="at">poupanca =</span> <span class="fu">sum</span>(<span class="st">`</span><span class="at">420</span><span class="st">`</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>    <span class="at">depositos_inter =</span> <span class="fu">sum</span>(<span class="st">`</span><span class="at">430</span><span class="st">`</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a>    <span class="at">relacoes_interfinanceiras =</span> <span class="fu">sum</span>(<span class="st">`</span><span class="at">444_445_446_447_456_458</span><span class="st">`</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>    <span class="at">resultado =</span> <span class="fu">sum</span>(<span class="st">`</span><span class="at">710</span><span class="st">`</span>),</span>
+<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>    <span class="at">domicilios =</span> <span class="fu">max</span>(domicilios),</span>
+<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a>    <span class="at">renda =</span> <span class="fu">max</span>(renda_nominal),</span>
+<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a>    <span class="at">populacao =</span> <span class="fu">max</span>(populacao),</span>
+<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a>    <span class="at">agua_encanada =</span> <span class="fu">max</span>(agua_encanada),</span>
+<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a>    <span class="at">esgoto =</span> <span class="fu">max</span>(esgoto),</span>
+<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a>    <span class="at">banheiro =</span> <span class="fu">max</span>(banheiro),</span>
+<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a>    <span class="at">energia_eletrica =</span> <span class="fu">max</span>(energia_eletrica),</span>
+<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a>    <span class="at">alfabetizados =</span> <span class="fu">max</span>(alfabetizados),</span>
+<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a>    <span class="at">densidade_demografica =</span> <span class="fu">max</span>(densidade_demografica),</span>
+<span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a>    <span class="at">densidade_empresarial =</span> <span class="fu">max</span>(densidade_empresarial),</span>
+<span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a>    <span class="at">densidade_vinculos =</span> <span class="fu">max</span>(densidade_vinculos),</span>
+<span id="cb7-39"><a href="#cb7-39" aria-hidden="true" tabindex="-1"></a>    <span class="at">qtd_empresas =</span> <span class="fu">max</span>(qtd_empresas),</span>
+<span id="cb7-40"><a href="#cb7-40" aria-hidden="true" tabindex="-1"></a>    <span class="at">qtd_va =</span> <span class="fu">max</span>(qtd_va),</span>
+<span id="cb7-41"><a href="#cb7-41" aria-hidden="true" tabindex="-1"></a>    <span class="at">pct_oferta_de_emprego =</span> <span class="fu">max</span>(pct_oferta_de_emprego)</span>
+<span id="cb7-42"><a href="#cb7-42" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb7-43"><a href="#cb7-43" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(populacao <span class="sc">&gt;</span> <span class="dv">0</span>)</span>
+<span id="cb7-44"><a href="#cb7-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-45"><a href="#cb7-45" aria-hidden="true" tabindex="-1"></a><span class="co"># Substituindo NA por 0</span></span>
+<span id="cb7-46"><a href="#cb7-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-47"><a href="#cb7-47" aria-hidden="true" tabindex="-1"></a>shape_final[<span class="fu">is.na</span>(shape_final)] <span class="ot">&lt;-</span> <span class="dv">0</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-almeida" class="csl-entry" role="listitem">
+Almeida, Eduardo. 2012. <em>Econometria Espacial Aplicada</em>. Campinas: Editora Alínea.
+</div>
+<div id="ref-andrade" class="csl-entry" role="listitem">
+Andrade, T. A. 1989. <span>«Métodos Estatísticos e Econométricos Aplicados à Análise Regional»</span>. Em <em>Economia Regional: Teorias e Métodos de Análise</em>, por P HADDAD. Fortaleza: BNB, ETENE.
+</div>
+<div id="ref-crocco2006" class="csl-entry" role="listitem">
+Crocco, M, A Cavalcante, C Barra, e V Val. 2006. <span>«Polarização regional e sistema financeiro»</span>. Em <em>Moeda e Território: Uma Interpretação da Dinâmica Regional Brasileira</em>, por M Crocco e F Jayme Jr, editado por Autêntica, 231–69. Belo Horizonte: Autêntica.
+</div>
+<div id="ref-spark" class="csl-entry" role="listitem">
+Foundation, The Apache Software. 2023. <span>«Python Front End for ’Apache Spark’»</span>. 2023. <a href="https://www.apache.org https://spark.apache.org">https://www.apache.org https://spark.apache.org</a>.
+</div>
+<div id="ref-mingotti" class="csl-entry" role="listitem">
+Mingoti, S. A. 2005. <em>Análise de dados através de estatística multivariada: uma abordagem aplicada</em>. Belo Horizonte: Editora UFMG.
+</div>
+<div id="ref-paula" class="csl-entry" role="listitem">
+Paula, L. F. De, J. L Oreiro, e F. A. C Basilio. 2013. <span>«Estrutura do setor bancário e o ciclo recente de expansão do crédito: o papel dos bancos públicos federais»</span>. <em>Nova Economia</em> 23 (3): 473–520. <a href="http://www.scielo.br/scielo.php?script=sci_arttext&amp;pid=S0103-63512013000300001">http://www.scielo.br/scielo.php?script=sci_arttext&amp;pid=S0103-63512013000300001</a>.
+</div>
+<div id="ref-geobr" class="csl-entry" role="listitem">
+Pereira, Rafael H. M., e Caio Nogueira Goncalves. 2023. <span>«geobr: Download Official Spatial Data Sets of Brazil»</span>. 2023. <a href="https://github.com/ipeaGIT/geobr">https://github.com/ipeaGIT/geobr</a>.
+</div>
+<div id="ref-igor" class="csl-entry" role="listitem">
+Tupy, I. S. 2018. <span>«Estudo sobre resiliência econômica, moeda e território: abordagem teórica e aplicação empírica para o caso brasileiro»</span>. Tese de Doutorado em Economia do Centro de Desenvolvimento e Planejamento Regional da Faculdade de Ciências Econômicas, Belo Horizonte: Universidade Federal de Minas Gerais.
+</div>
+</div>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>https://www4.bcb.gov.br/fis/cosif/estban.asp?frame=1<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>https://www.bcb.gov.br/fis/info/agencias.asp?frame=1<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Vale destacar que foram encontrados endereços de agências incorretos nos dados disponibilizados pelo BCB, o que resultou em um georreferenciamento incorreto. Assumiu-se um erro de apenas 5% dos dados nesse procedimento.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Na ESTBAN, é a soma das contas agregadas 400 (depósitos à vista do governo), que contém as subcontas: 401 (serviços públicos); 402 (atividades empresariais); 403 (especiais do tesouro nacional); 404 (saldo credores em contas de empréstimos e financiamentos - CFP). E 410 (depósitos à vista privado), que contém as subcontas: 411 (de pessoas físicas); 412 (de pessoas júridicas); 413 (de instituições do sistema financeiro); 414 (judiciais); 415 (obrigatórios); 416 (para investimentos); 417 (vinculados); 418 (demais depósitos); 419 (saldo credores em contas de empréstimos e financiamentos - Outros).<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Conta 420 da ESTBAN.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>Conta 430 da ESTBAN, contém as subcontas: 431 (depósitos interfinanceiros), 432 (depósitos a prazo) e 433 (captações no mercado aberto).<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>Representa o somatório das seguintes contas da ESTBAN: (161) empréstimos e títulos descontados, (162) financiamentos, (163) financiamentos rurais à agricultura – custeio/investimento, (164) financiamentos rurais à pecuária - custeio/investimento, (165) financiamentos rurais à agricultura – comercialização, (166) financiamentos rurais à pecuária – comercialização, (167) financiamentos agroindustriais, (168) (rendas a apropriar de operações de financiamentos agroindustriais), (169) financiamentos imobiliários, (171) outras operações de crédito, (172) outros créditos, (173) provisão para operações de crédito créditos em liquidação e (176) operações especiais.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>Agregado das contas 111 (Caixa), 112 (Depósitos bancários), 113 (Reservas livres em espécie) e 114 (Aplicações temporárias em ouro).<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p>Conta 161 da ESTBAN, representam o crédito mais líquido dentro das operações de crédito.<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn10"><p>Conta 399 da ESTBAN, contendo o somatório de todas as contas do ativo.<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copiada");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copiada");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./introducao.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introdução</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./summary.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>
